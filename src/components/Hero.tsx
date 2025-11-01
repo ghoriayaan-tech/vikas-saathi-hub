@@ -61,14 +61,16 @@ const Hero = () => {
               See Live Demo
               <ArrowDown className="ml-2 h-5 w-5" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-brand-blue text-lg px-8 py-6"
-            >
+          <Button
+            size="lg"
+            asChild
+            className="bg-white/10 text-white border-2 border-white hover:bg-white hover:text-brand-blue text-lg px-8 py-6"
+          >
+            <a href="#cta" className="flex items-center">
               <Download className="mr-2 h-5 w-5" />
               Read Full Proposal
-            </Button>
+            </a>
+          </Button>
           </motion.div>
 
           {/* Stats Ticker */}

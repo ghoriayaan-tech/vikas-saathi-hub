@@ -21,29 +21,36 @@ const CTAFooter = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16" id="cta">
             <Button
               size="lg"
+              asChild
               className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Full Proposal
+              <a href="#" download className="flex items-center">
+                <Download className="mr-2 h-5 w-5" />
+                Download Full Proposal
+              </a>
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-brand-purple text-lg px-8 py-6"
+              asChild
+              className="bg-white/10 text-white border-2 border-white hover:bg-white hover:text-brand-purple text-lg px-8 py-6"
             >
-              <Play className="mr-2 h-5 w-5" />
-              Watch Pitch Deck
+              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <Play className="mr-2 h-5 w-5" />
+                Watch Pitch Deck
+              </a>
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-brand-purple text-lg px-8 py-6"
+              asChild
+              className="bg-white/10 text-white border-2 border-white hover:bg-white hover:text-brand-purple text-lg px-8 py-6"
             >
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Us
+              <a href="mailto:contact@finkshitij.com" className="flex items-center">
+                <Mail className="mr-2 h-5 w-5" />
+                Contact Us
+              </a>
             </Button>
           </div>
 

@@ -310,7 +310,12 @@ const AltCreditDemo = () => {
               </div>
 
               {/* Improvement Tips */}
-              <Button variant="outline" className="w-full" size="lg">
+              <Button 
+                onClick={() => alert('Tips: Increase UPI transactions, maintain regular utility payments, build community trust through local references')} 
+                variant="outline" 
+                className="w-full" 
+                size="lg"
+              >
                 <TrendingUp className="mr-2" />
                 See How to Improve Score
               </Button>
